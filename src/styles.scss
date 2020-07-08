@@ -181,26 +181,42 @@ img {
 }
 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: rgb(255, 226, 129);
   border-radius: 50px;
-  border: 1px solid black;
-  height: 20px;
+  height: 40px;
   position: relative;
   width: 40px;
+  transition: .2s;
+}
+
+.dark-mode__toggle.toggled-1 {
+  background: rgb(201, 207, 224);
+}
+
+.dark-mode__toggle.toggled-2 {
+  background: #3d3644;
 }
 
 .toggle {
   background: #f68819;
   border-radius: 50px;
-  height: 18px;
-  left: 0;
+  height: 20px;
+  left: 2px;
+  top: 5px;
   position: absolute;
   transition: 0.2s;
   width: 20px;
 }
 
-.toggled {
+.toggle.toggled-1 {
+  background: #292929;
   left: 18px;
+}
+
+.toggle.toggled-2 {
+  background: #4992ff;
+  left: 9px;
+  top: 18px;
 }
 
 .charts {
@@ -242,12 +258,22 @@ text-align: left;
   width: 50px;
 }
 
-.dark-mode {
+.color-mode-1 {
   color: #fff;
   background-color: #313843;
 
   .navbar {
     background-color: #1F2022;
+    border: none;
+  }
+}
+
+.color-mode-2 {
+  color: #ebebeb;
+  background: linear-gradient(#2d3e55 0%, #272936 100%);
+
+  .navbar {
+    background: linear-gradient(90deg, #456ace 0%, #5a92b3 100%);;
     border: none;
   }
 }
