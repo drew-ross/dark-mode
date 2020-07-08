@@ -187,6 +187,10 @@ img {
   position: relative;
   width: 40px;
   transition: .2s;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .dark-mode__toggle.toggled-1 {
@@ -270,10 +274,10 @@ text-align: left;
 
 .color-mode-2 {
   color: #ebebeb;
-  background: linear-gradient(#2d3e55 0%, #272936 100%);
+  background: linear-gradient(#233753 0%, #3d2d4b 100%);
 
   .navbar {
-    background: linear-gradient(90deg, #456ace 0%, #5a92b3 100%);;
+    background: linear-gradient(90deg, #3b65d8 0%, #5a92b3 100%);;
     border: none;
   }
 }
